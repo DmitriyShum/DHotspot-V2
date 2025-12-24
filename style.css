@@ -1,0 +1,101 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    min-height:100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    color: #fff;
+    
+}
+
+.mtext{
+    color: wheat;
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+.profile{
+    display:flex;
+    flex: 1 0 auto;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+    padding: 100px;
+}
+
+.links{ 
+    display:flex; 
+    gap:14px; 
+    align-items:center; 
+    justify-content:center 
+}
+.links a{ 
+    color:var(--link-color, wheat); 
+    text-decoration:none; 
+    font-weight:600; }
+.links a:hover{ 
+    text-decoration:underline 
+}
+
+.projects-grid { 
+    display:grid; 
+    gap:14px; 
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr)); 
+    margin-top:24px; 
+    width:100%;
+}
+.project-card { 
+    background: rgba(255,255,255,0.025); 
+    padding:14px; 
+    border-radius:10px; 
+    border:1px solid rgba(255,255,255,0.03); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45); 
+}
+.project-card h3{ 
+    margin:0 0 6px; 
+    font-size:18px;
+}
+.project-card .muted {
+     color:#9aa6b2; 
+     margin:0 0 10px; 
+     font-size:14px; 
+    }
+.project-card .link { 
+    color:#9ad6ff; 
+    text-decoration:none; 
+    font-weight:600;
+}
+.project-card:hover { 
+    transform:translateY(-6px); 
+    transition: transform .22s ease;
+}
+/* Footer styles */
+.site-footer{ 
+    flex-shrink: 0;
+    text-align:center; 
+    color:#9aa6b2; 
+    font-size:14px;
+    padding: 12px 0px; 
+}
+
+/* Ensure footer links match the footer color instead of default blue */
+.site-footer a{
+    color: #9aa6b2;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+}
+.site-footer a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
