@@ -17,6 +17,58 @@ body{
     
 }
 
+.cookie-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    z-index:9999;
+}
+.cookie-panel{
+    background:#fff;
+    color:#111;
+    max-width:980px;
+    width:100%;
+    padding:16px 20px;
+    border-radius:10px;
+    margin:20px;
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:12px;
+}
+    .cookie-text{
+        flex:1;
+        min-width:200px;
+        font-size:15px;
+    }
+    .cookie-actions{
+        display:flex;
+        gap:8px;
+    }
+    .cookie-btn{
+        padding:10px 14px;
+        border-radius:8px;
+        border:1px solidtransparent;
+        background:#0b63ff;
+        color:#fff;
+        cursor:pointer;
+        font-weight:600;
+    }
+    .cookie-btn.secondary{
+        background:transparent;
+        color:#111;border-color:#cfcfcf
+    }
+    .cookie-hidden{display:none !important
+    }
+    @media (max-width:520px){
+        .cookie-panel{
+            flex-direction:column;
+            align-items:stretch;text-align:center}}
+
 .mtext{
     color: wheat;
     margin: 0;
@@ -36,15 +88,16 @@ body{
 .links{ 
     display:flex; 
     gap:14px; 
-    align-items:center; 
-    justify-content:center 
+    align-items:center;
+    justify-content:center;
 }
 .links a{ 
     color:var(--link-color, wheat); 
     text-decoration:none; 
-    font-weight:600; }
+    font-weight:600;
+}
 .links a:hover{ 
-    text-decoration:underline 
+    text-decoration:underline; 
 }
 
 .projects-grid { 
