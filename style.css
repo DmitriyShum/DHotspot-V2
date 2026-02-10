@@ -1,12 +1,14 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
+@media only screen and (min-width: 740px) {
 body{
     background-image:url("images/homemainbg.webp");
     background-position:initial;
-    background-size:cover;
+    background-size:initial;
+    position:sticky; 
+  }
+body{
+    background-image:url("images/homemainbg.webp");
+    background-position:initial;
+    background-size:initial;
     position:sticky;
 }
 .profilebox{
