@@ -1,0 +1,74 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-image:url("images/homemainbg.webp");
+    background-position:initial;
+    background-size:cover;
+    position:sticky;
+}
+.profilebox{
+    background: rgba(0, 0, 0, 0.315); 
+    padding:14px;
+    border-radius:10px; 
+    border:1px solid rgba(255, 0, 0, 0); 
+    box-shadow: 0 8px 20px rgb(0, 0, 0); 
+    margin:200px;
+    text-align: center;
+}
+.profile{
+    border-radius:50%;
+    border: #ffffff;
+    border-style:groove;
+    cursor:none;
+}
+.big{
+    color:rgb(202, 255, 197);
+    font-size: 38px;
+}
+.mtext{
+    padding:14px;
+    color: white;
+    text-shadow:1px 2px black;
+    font-size: 14px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing:0.1rex;
+    margin:0px;
+}
+a{
+    padding:10px;
+    background-color: #669966;
+    color:bisque;
+    font-size:18px;
+    text-align: center;
+    text-decoration: none;
+    gap:14px; 
+    justify-content:center;
+}
+a:hover{
+    background-color: #009900;
+    
+}
+
+/* Footer*/
+.site-footer{ 
+    flex-shrink: 0;
+    text-align:center; 
+    color:#9aa6b2; 
+    font-size:14px;
+    padding: 12px 0px; 
+    bottom:auto;
+}
+.site-footer a{
+    color: #9aa6b2;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    bottom:auto;
+}
+.site-footer a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
