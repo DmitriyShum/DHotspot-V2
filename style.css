@@ -4,13 +4,13 @@ body{
     background-image:url("images/homemainbg.webp");
     background-position:initial;
     background-size:initial;
-    position:sticky; 
+    position:absolute; 
   }
 body{
     background-image:url("images/homemainbg.webp");
     background-position:initial;
     background-size:initial;
-    position:sticky;
+    position:absolute;
 }
 .profilebox{
     border-radius:20%;
