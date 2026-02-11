@@ -1,11 +1,4 @@
-@media only screen and (min-width: 740px) {
-body{
-    background-color: #555555;
-    background-image:url("images/homemainbg.webp");
-    background-position:initial;
-    background-size:initial;
-    position:absolute; 
-  }
+
 body{
     background-image:url("images/homemainbg.webp");
     background-position:initial;
@@ -23,6 +16,8 @@ body{
     text-align: center;
 }
 .profile{
+    width:200px;
+    height:200px;
     border-radius:50%;
     border: #ffffff;
     border-style:groove;
@@ -52,7 +47,7 @@ a{
     justify-content:center;
 }
 a:hover{
-    background-color: #009900;
+    background-color: #255f25;
     
 }
 
@@ -75,4 +70,81 @@ a:hover{
 .site-footer a:hover{
     color: #ffffff;
     text-decoration: underline;
+}
+@media only screen and (max-width: 730px) {
+body{
+    background-color: #555555;
+    background-image:url("images/homemainbg.webp");
+    background-position:initial;
+    background-size:initial;
+    position:absolute;
+  }
+
+.profilebox{
+    bottom:20px;
+    border-radius:20%;
+    background: rgba(0, 0, 0, 0.315); 
+    padding:14px;
+    border-radius:10px; 
+    border:1px solid rgba(255, 0, 0, 0); 
+    box-shadow: 0 8px 20px rgb(0, 0, 0); 
+    margin:auto;
+    text-align: center;
+}
+.profile{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border: #ffffff;
+    border-style:groove;
+    cursor:none;
+}
+.big{
+    color:rgb(202, 255, 197);
+    font-size: 28px;
+}
+.mtext{
+    padding:14px;
+    color: white;
+    text-shadow:1px 2px black;
+    font-size:12px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing:0.1rex;
+    margin:0px;
+}
+a{
+    padding:10px;
+    background-color: #669966;
+    color:bisque;
+    font-size:18px;
+    text-align: center;
+    text-decoration: none;
+    gap:14px; 
+    justify-content:center;
+}
+a:hover{
+    background-color: #255f25;
+    
+}
+
+/* Footer*/
+.site-footer{ 
+    flex-shrink: 0;
+    text-align:center; 
+    color:#9aa6b2; 
+    font-size:14px;
+    padding:12px 0px; 
+    bottom:auto;
+}
+.site-footer a{
+    color: #9aa6b2;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    bottom:auto;
+}
+.site-footer a:hover{
+    color: #ffffff;
+    text-decoration: underline;
+}
 }
