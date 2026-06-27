@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+<head>
  <title>DHotspot | Home</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="images/favicon" href="images/favicon.ico">
@@ -10,17 +10,48 @@
     <meta name="description" content="Main page for Dmitriy.S.">
 </head>
 <body>
-<div class="profilebox">
-   <img class="profile" src="images/me.jpg" alt="Profile picture of Dmitriy S">
-    <h2 class="big">Dmitriy. S</h2>
-    <a rel="Github noopener" href="https://www.github.com/DmitriyShum" target="_blank">Github</a>
-    <a rel="Mastodon noopener" href="https://mastodon.online/@DHotspot" target="_blank">Mastodon</a>
-    <a rel="Email" href="mailto:contact@dhotspot.dev">Contact</a>
-    <p class="mtext">I am a Computer Science student interested in the Information of Technology and Information of Security fields. Over the years of my computer knowledge, I was able to develop a few projects and post them as open source on Github. My goal is to continue pursuing the Information Technology field, and work my way up the position ladder. This website was built to act in the form of a short description.</p>
-  </div>
+<div class="topper">
+<h3 class="mtext" onclick="alert('You found a secret! Your lucky number is ' + Math.floor(Math.random() * + 99))">>Dmitriy.S</h3>
+</div> <!--Ends topper-->
 
-  <footer class="site-footer">
-     <p>Thank you for visiting my website!</p>
-  </footer>
+<div class="box">
+   <h1 class="mtext">Hi! I'm Dmitriy, a CS student from Boston, MA.</h1>
+   <p class="mtext"> I am focused on getting into the Info Tech field, while writing programs and building Embedded Systems projects. On my free time, I enjoy going on outdoor adventures such as fishing, kayaking, hiking and camping. Indoors, cooking, playing musical instruments, painting, and playing video games. Welcome to my website! Quote of 2026: "But how could you live a life and have no story to tell?" - Dostoevsky</p>
+   <hr>
+   <h2 class="mtext">Get in touch!</h2>
+   <br>
+   <div class="links">
+   <a rel="noopener" href="https://www.github.com/DmitriyShum" target="_blank"><img height="25" width="90" src="images/gh.png" alt="github"></a>
+   <a rel="noopener" href="https://www.mastodon.online/@DHotspot" target="_blank"><img height="35" width="100" src="images/mstd.svg" alt="mastodon"></a>
+   <a rel="noopener" href="https://keybase.io/tdevul1122" target="_blank"><img height="35" width="35" src="images/keybase.png" alt="keybase"></a>
+   <a rel="noopener" href="https://www.last.fm/user/DHotspot"><img height="25" width="60" src="images/lastfm.png" alt="lastfm"></a>
+   </div>
+</div> <!--Ending box element-->
+ <div class="mouse-scroll">
+      <div class="mouse">
+         <div class="wheel"></div>
+      </div>
+   </div>
+<div class="projects">
+   <h1 class="mtext">[Projects]</h1>
+   <br>
+   <span class="fsi">
+      <a rel="noopener" href="https://hackaday.io/project/205236/gallery" target="_blank"><img height="300" width="400" src="https://cdn.hackaday.io/images/8532851773461377514.png" alt="fsi"></a>
+      <h2 class="mtext">Full Sensor Irrigation (FSI)</h2>
+      <p class="mtext">This project was my first self-built Embedded Systems project which was built on an Arduino UNO in C++. Using two sensors, it is able to read the air temperature and humidity, as well as soil moisture, and write it to the 0.96 LCD. If the soil moisture reaches a certain high point level, that means that the soil is dry, the pump relay will turn on, and send water from the source, and into the soil.</p>
+   </span>
+
+   <span class="snakegame">
+      <a rel="noopener" href="https://github.com/DmitriyShum/SnakeGame/tree/main"><img height="400" width="400" src="https://github.com/DmitriyShum/SnakeGame/blob/main/resources/capture.png?raw=true" alt="snakegame"></a>
+      <h2 class="mtext">SnakeGame in Java (WIP)</h2>
+      <p class="mtext">For Data Structures and Algorithms, we got to pick final projects. I am working on it alonside my team mate, Beckner.P.C. This project will be completed by July 9, 2026. The SnakeGame opens up in a JFrame, and the snake is represented by a LinkedList, where the tail grows each time it eats an apple. The snake may not go through walls or itself, and it cannot reverse into itself.</p>
+   </span>
+
+   <span class="website">
+   <h2 class="mtext">This website, DHotspot.dev</h2>
+   <p class="mtext">This website has seen many versions and looks, the one that you are seeing today took me almost a whole day to redesign! More interactive, modern, colorful and detailful! With 192 lines of code, and 8 files in total</p>   
+   
+   </span>
+</div>
 </body>
 </html>
