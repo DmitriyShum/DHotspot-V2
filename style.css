@@ -49,6 +49,8 @@ body{
 }
 
 .links{
+	display:flex;
+	flex-direction:row;
     margin: auto;
     padding: auto;
     word-spacing: 50px;
