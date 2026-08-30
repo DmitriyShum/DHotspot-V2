@@ -1,16 +1,15 @@
 html, body{
-    width:99.9%;
-    height:99.9%;
+    width:100%;
+    height:100%;
     scroll-behavior:smooth;
 }
 
 body{
-    background: linear-gradient(-30deg, #07281b, #05161c, #06070f);
+    background: linear-gradient(-30deg, #1c2c26, #07281b, #05161c, #06070f, #1a1d38);
     background-size:500% 500%;
     background-position:center;
     animation: gradient 15s ease infinite;
 }
-
 @keyframes gradient {
     0% {
         background-position: 0% 30%;
@@ -35,8 +34,8 @@ body{
     text-align: center;
 }
 
-.projects{
-    display:inline-block;
+.content{
+    display:block;
     height:auto;
     width:auto;
     border-radius:0px;
@@ -46,25 +45,33 @@ body{
     border:1px solid;
     border-radius:20px;
     text-align: center;
+    align-content: center;
 }
 
 .links{
-	display:flex;
-	flex-direction:row;
-    margin: auto;
-    padding: auto;
-    word-spacing: 50px;
+    display:flex;
+    justify-content: center;
+    word-spacing:auto;
+    flex-direction:row;
+    padding:auto;
+    margin:auto;
+    width:100px;
 }
-
+button.links{
+    background-color: transparent;
+    border-radius: 20px;
+}
+button.tab{
+    color:red;
+}
 h1.mtext{
     font-size:25px;
 }
-
 .mtext{
     color: white;
     text-shadow:1px 2px black;
     font-size: 14px;
-    font-family: Geneva, Verdana, sans-serif;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     letter-spacing:0.1rex;
 }
 
@@ -74,8 +81,7 @@ h1.mtext{
 	align-items: center;
 	gap: 10px;
 }
-
-.mouse {
+.mouse{
 	width: 48px;
 	height: 80px;
     margin: 75px;
@@ -85,7 +91,6 @@ h1.mtext{
 	justify-content: center;
 	align-items: start;
 }
-
 .wheel {
 	width: 8px;
 	height: 16px;
@@ -94,7 +99,6 @@ h1.mtext{
 	animation: scroll 1s infinite;
 	margin-top: 8px;
 }
-
 /* Scroll animation */
 @keyframes scroll {
 	0% {
@@ -109,7 +113,6 @@ h1.mtext{
 		transform: translateY(0);
 	}
 }
-
 .arrow {
 	width: 10px;
 	height: 10px;
@@ -117,7 +120,10 @@ h1.mtext{
 	border-bottom: 2px solid #000;
 	transform: rotate(45deg);
 }
-
+.profile{
+    border-radius: 100px;
+    border-color: white;
+}
 /*Mobile Screen size*/
 @media only screen and (max-width: 730px) {
 body{
@@ -128,9 +134,20 @@ body{
     background-position:initial;
     position:absolute;
     background-size:500% 500%;
-
   }
 
+  .links{
+    display:flex;
+    justify-content: center;
+    word-spacing:auto;
+    flex-direction:column;
+    padding:auto;
+    margin:auto;
+}
+button.links{
+    background-color: transparent;
+    border-radius: 40px;
+}
 
 .box{
     height:auto;
@@ -155,11 +172,11 @@ body{
     border-radius:20px;
     text-align: center;
 }
-	
+
 h1.mtext{
     font-size: 20px;
 }
-	
+
 .mtext{
     padding:14px;
     color: white;
@@ -173,5 +190,5 @@ h1.mtext{
 img{
     height:50%;
     width:50%;
-}
+    }
 }
