@@ -26,9 +26,9 @@ body{
     height:auto;
     width:auto;
     border-radius:20px;
-    background: rgba(0, 0, 0, 0.315); 
+    background: rgba(57, 124, 107, 0.315); 
     padding:50px;
-    border:1px solid rgba(255, 0, 0, 0); 
+    border:1px solid rgba(0, 119, 255, 0); 
     box-shadow: 0 8px 20px rgb(0, 0, 0); 
     margin: 100px;
     text-align: center;
@@ -150,10 +150,10 @@ button.links{
     height:auto;
     width:auto;
     border-radius:20px;
-    background: rgba(0, 0, 0, 0.315); 
+	background: rgba(57, 124, 107, 0.315);
     padding:auto;
-    border:1px solid rgba(255, 0, 0, 0); 
-    box-shadow: 0 8px 20px rgb(0, 0, 0); 
+    border:1px solid rgba(255, 0, 0, 0);
+    box-shadow: 0 8px 20px rgb(0, 0, 0);
     margin:50px;
     text-align:center;
 }
