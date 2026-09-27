@@ -48,6 +48,8 @@ body{
 }
 
 .links{
+    color:white;
+    text-decoration: none;
     display:flex;
     justify-content: center;
     word-spacing:auto;
@@ -120,6 +122,8 @@ h1.mtext{
 .profile{
     border-radius: 100px;
     border-color: white;
+    cursor: none;
+    menu
 }
 /*Mobile Screen size*/
 @media only screen and (max-width: 730px) {
@@ -185,7 +189,7 @@ h1.mtext{
 }
 
 img{
-    height:50%;
-    width:50%;
+    height:min;
+    width:min;
     }
 }
